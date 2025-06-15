@@ -12,7 +12,7 @@ const Portfolio = () => {
       description: "Implemented a deep neural network from scratch in Python, including forward/backward propagation, gradient descent, activation functions, and loss computation without using high-level ML frameworks.",
       tech: ["Python", "Numpy"],
       github: "#",
-      image: "/Images/NeuralNetwork.jpg" // Add your image path here
+      image: process.env.PUBLIC_URL + "/Images/NeuralNetwork.jpg" // Add your image path here
     },
     {
       id: 2,
@@ -20,16 +20,16 @@ const Portfolio = () => {
       description: "Developed the backend of a full-stack web application during a 6-hour hackathon using Python and React, integrating an AI agent to generate personalized learning pathways and increase accessibility to education.",
       tech: ["React", "Python", "Flask"],
       github: "https://github.com/israelavendanojr/pathora",
-      image: "/Images/mountain.jpg" // Add your image path here
+      image: process.env.PUBLIC_URL + "/Images/mountain.jpg" // Add your image path here
     },
     {
       id: 3,
       title: "Data Processing Pipeling",
-      description: "Developed scalable Python-based image analysis pipelines using Pillow to study gut proliferation in ASD and WT mouse models, assessing the effects of CBD and terpene therapy. Enabled efficient, team-wide access to high-throughput analysis results.",
+      description: "Developed scalable Python-based image analysis pipelines using Pillow to study gut proliferation in ASD and WT mouse models, assessing the effects of CBD and terspene therapy. Enabled efficient, team-wide access to high-throughput analysis results.",
       tech: ["Python", "Pandas", "Pillow"],
       github: "#",
       live: "#",
-      image: "/Images/day11_image1_mouseRJ1-8_ch00_SV.jpg" // Add your image path here
+      image: process.env.PUBLIC_URL + "/Images/day11_image1_mouseRJ1-8_ch00_SV.jpg" // Add your image path here
     }
   ];
 
