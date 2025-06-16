@@ -26,7 +26,7 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: "Data Processing Pipeline",
+      title: "Gram Stain Processing Pipeline",
       description:
         "Developed scalable Python-based image analysis pipelines using Pillow to study gut proliferation in ASD and WT mouse models, assessing the effects of CBD and terspene therapy. Enabled efficient, team-wide access to high-throughput analysis results.",
       tech: ["Python", "Pandas", "Pillow"],
