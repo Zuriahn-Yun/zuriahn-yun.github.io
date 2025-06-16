@@ -408,7 +408,7 @@ const Portfolio = () => {
 
       {/* Footer */}
       <footer style={styles.footer}>
-        <p>&copy; 2025 Zuriahn Yun. Built with React.</p>
+        <p>&copy; 2025 Zuriahn Yun.</p>
       </footer>
     </div>
   );
