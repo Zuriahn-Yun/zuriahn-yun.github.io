@@ -34,6 +34,16 @@ const Portfolio = () => {
       live: "#",
       image:
         process.env.PUBLIC_URL + "/Images/day11_image1_mouseRJ1-8_ch00_SV.jpg", // Add your image path here
+    },{
+      id: 4,
+      title: "IOS Word Hunt Solver",
+      description:
+        "Sick of losing IOS word hunt. Once you input all the letters in your word hunt game it uses DFS to find all possible words while cross referencing an English Dictionary. I still lose but this was fun.",
+      tech: ["Python"],
+      github: "https://github.com/Zuriahn-Yun/WordHuntSolver/blob/main/solver.py",
+      live: "#",
+      image:
+        process.env.PUBLIC_URL + "/Images/JsxLT.jpg", // Add your image path here
     },
   ];
 
