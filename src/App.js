@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Github, Linkedin, Mail, ExternalLink, ArrowRight } from "lucide-react";
+import { Github, Linkedin, Mail, ExternalLink, ArrowRight, Link } from "lucide-react";
 
 const Portfolio = () => {
   const [currentPage, setCurrentPage] = useState("about");
@@ -44,8 +44,29 @@ const Portfolio = () => {
       live: "#",
       image:
         process.env.PUBLIC_URL + "/Images/day11_image1_mouseRJ1-8_ch00_SV.jpg", // Add your image path here
-    },{
+    },
+    {
       id: 5,
+      title: "Quantifying the Effects of Building Features on Energy Usage",
+      description:
+        "Created a regression model to predict how much energy a building uses based on things like size, temperature, and number of people. Found that building type and square footage had the biggest impact, and the model gave reliable, accurate results.",
+      tech: ["Minitab"],
+      github: process.env.PUBLIC_URL + "/Images/342 Final Project.pdf",
+      image:
+        process.env.PUBLIC_URL + "/Images/linear_regression.png", // Add your image path here
+    },
+    {
+      id: 6,
+      title: "Probability of Models in Practice: Poisson Vs Binomial Distribution",
+      description:
+        "Compared the Binomial and Poisson distributions by analyzing their behavior across varying parameters using statistical methods like mean comparison and R² from curve fitting. Found that while both distributions can model discrete events, their fit and accuracy vary significantly depending on event probability and sample size.",
+      tech: ["R Studio"],
+      github: process.env.PUBLIC_URL + "/Images/Probability of Models in Practice.pdf",
+      image:
+        process.env.PUBLIC_URL + "/Images/Poisson.jpg", // Add your image path here
+    },
+    {
+      id: 7,
       title: "IOS Word Hunt Solver",
       description:
         "Sick of losing IOS word hunt. Once you input all the letters in your word hunt game it uses DFS to find all possible words while cross referencing an English Dictionary. I still lose but this was fun.",
