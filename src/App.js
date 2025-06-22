@@ -8,6 +8,16 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
+      title: "Crowd Vision",
+      description:
+        "Built a full-stack hackathon project integrating the LLaMA API with a custom ensemble backend (GRID-based CNN → API → RAG pipeline) for real-time crowd analysis. The system extracts image and textual data, performs scenario assessments (heatmaps, danger zones), and generates detailed automated reports.",
+      tech: ["Python", "Llama 4 API"],
+      github: "https://github.com/israelavendanojr/llama-hackathon",
+      live: "https://www.youtube.com/watch?v=bUo0xOwCAI0&list=LL&index=2&ab_channel=israeljrvideos", 
+      image: process.env.PUBLIC_URL + "/Images/CROWD VISION IMAGE.png", // Add your image path here
+    },
+    {
+      id: 2,
       title: "Neural Network",
       description:
         "Implemented a deep neural network from scratch in Python, including forward/backward propagation, gradient descent, activation functions, and loss computation without using high-level ML frameworks.",
@@ -16,7 +26,7 @@ const Portfolio = () => {
       image: process.env.PUBLIC_URL + "/Images/NeuralNetwork.jpg", // Add your image path here
     },
     {
-      id: 2,
+      id: 3,
       title: "Pathora",
       description:
         "Developed the backend of a full-stack web application during a 6-hour hackathon using Python and React, integrating an AI agent to generate personalized learning pathways and increase accessibility to education.",
@@ -25,7 +35,7 @@ const Portfolio = () => {
       image: process.env.PUBLIC_URL + "/Images/mountain.jpg", // Add your image path here
     },
     {
-      id: 3,
+      id: 4,
       title: "Gram Stain Processing Pipeline",
       description:
         "Developed scalable Python-based image analysis pipelines using Pillow to study gut proliferation in ASD and WT mouse models, assessing the effects of CBD and terspene therapy. Enabled efficient, team-wide access to high-throughput analysis results.",
@@ -35,7 +45,7 @@ const Portfolio = () => {
       image:
         process.env.PUBLIC_URL + "/Images/day11_image1_mouseRJ1-8_ch00_SV.jpg", // Add your image path here
     },{
-      id: 4,
+      id: 5,
       title: "IOS Word Hunt Solver",
       description:
         "Sick of losing IOS word hunt. Once you input all the letters in your word hunt game it uses DFS to find all possible words while cross referencing an English Dictionary. I still lose but this was fun.",
