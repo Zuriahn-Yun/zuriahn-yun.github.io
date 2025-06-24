@@ -10,7 +10,7 @@ const Portfolio = () => {
       id: 1,
       title: "Crowd Vision",
       description:
-        "Built a full-stack hackathon project integrating the LLaMA API with a custom ensemble backend (GRID-based CNN → API → RAG pipeline) for real-time crowd analysis. The system extracts image and textual data, performs scenario assessments (heatmaps, danger zones), and generates detailed automated reports.",
+        "Built a full-stack hackathon project integrating the Llama API with a custom ensemble backend (GRID-based CNN → API → RAG pipeline) for real-time crowd analysis. The system extracts image and textual data, performs scenario assessments (heatmaps, danger zones), and generates detailed automated reports.",
       tech: ["Python", "Llama 4 API"],
       github: "https://github.com/israelavendanojr/llama-hackathon",
       live: "https://www.youtube.com/watch?v=bUo0xOwCAI0&list=LL&index=2&ab_channel=israeljrvideos", 
@@ -67,6 +67,28 @@ const Portfolio = () => {
     },
     {
       id: 7,
+      title: "Schedule Automation with Microsoft Teams integration",
+      description:
+        "I developed five streamlined Microsoft Power Automate workflows for the WWU IT department, integrated with Microsoft Teams. These workflows feature a clean, scalable design that enables easy copy paste deployment, deletion, and scheduling making it simple to manage and reuse automation across teams with minimal setup.",
+      tech: ["Microsoft Power Automate","Low Code Environment"],
+      github: "#",
+      live: "#",
+      image:
+        process.env.PUBLIC_URL + "/Images/PowerAutomate.png", // Add your image path here
+    },
+    {
+      id: 8,
+      title: "Java trading Simulation with SQL Integration",
+      description:
+        "I created a Java program that connects to a MySQL database to pull historical stock data and simulate basic trading activity. It adjusts for stock splits, uses moving averages, and runs buy/sell decisions over time.",
+      tech: ["Java","SQL"],
+      github: "#",
+      live: "#",
+      image:
+        process.env.PUBLIC_URL + "/Images/stock.jpg", // Add your image path here
+    },
+    {
+      id: 9,
       title: "IOS Word Hunt Solver",
       description:
         "Sick of losing IOS word hunt. Once you input all the letters in your word hunt game it uses DFS to find all possible words while cross referencing an English Dictionary. I still lose but this was fun.",
