@@ -40,7 +40,7 @@ const Portfolio = () => {
       description:
         "Developed scalable Python-based image analysis pipelines using Pillow to study gut proliferation in ASD and WT mouse models, assessing the effects of CBD and terspene therapy. Enabled efficient, team-wide access to high-throughput analysis results.",
       tech: ["Python", "Pandas", "Pillow"],
-      github: "#",
+      github: "https://github.com/Zuriahn-Yun/Gram-Stain-Pipeline",
       live: "#",
       image:
         process.env.PUBLIC_URL + "/Images/day11_image1_mouseRJ1-8_ch00_SV.jpg", // Add your image path here
