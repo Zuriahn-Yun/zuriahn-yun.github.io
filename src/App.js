@@ -4,7 +4,10 @@ import { Github, Linkedin, Mail, ExternalLink, ArrowRight, Link } from "lucide-r
 const Portfolio = () => {
   const [currentPage, setCurrentPage] = useState("about");
 
-  // Sample projects data - replace with your actual projects
+  // PROJECT DATA
+  // TEST BUILD WITH - npm start
+  // DEPLOY BUILD WITH - npm run deploy
+
   const projects = [
     {
       id: 1,
@@ -27,6 +30,15 @@ const Portfolio = () => {
     },
     {
       id: 3,
+      title: "Qubit Simulation",
+      description:
+        "Developed a Python simulator for a single qubit that models quantum states and observables as Hermitian matrices. It also creates random Hermitian Matrices. This project provides a foundation for future extensions to qubit systems.",
+      tech: ["Python", "Numpy"],
+      github: "https://github.com/Zuriahn-Yun/Sample-Based-Quantum-Diagonalization-Simulation/tree/main",
+      image: process.env.PUBLIC_URL + "/Images/SQD.jpg", // Add your image path here
+    },
+    {
+      id: 4,
       title: "Pathora",
       description:
         "Developed the backend of a full-stack web application during a 6-hour hackathon using Python and React, integrating an AI agent to generate personalized learning pathways and increase accessibility to education.",
@@ -35,7 +47,7 @@ const Portfolio = () => {
       image: process.env.PUBLIC_URL + "/Images/mountain.jpg", // Add your image path here
     },
     {
-      id: 4,
+      id: 5,
       title: "Gram Stain Processing Pipeline",
       description:
         "Developed scalable Python-based image analysis pipelines using Pillow to study gut proliferation in ASD and WT mouse models, assessing the effects of CBD and terspene therapy. Enabled efficient, team-wide access to high-throughput analysis results.",
@@ -46,7 +58,7 @@ const Portfolio = () => {
         process.env.PUBLIC_URL + "/Images/day11_image1_mouseRJ1-8_ch00_SV.jpg", // Add your image path here
     },
     {
-      id: 5,
+      id: 6,
       title: "Quantifying the Effects of Building Features on Energy Usage",
       description:
         "Created a regression model to predict how much energy a building uses based on things like size, temperature, and number of people. Found that building type and square footage had the biggest impact, and the model gave reliable, accurate results.",
@@ -56,7 +68,7 @@ const Portfolio = () => {
         process.env.PUBLIC_URL + "/Images/linear_regression.png", // Add your image path here
     },
     {
-      id: 6,
+      id: 7,
       title: "Probability of Models in Practice: Poisson Vs Binomial Distribution",
       description:
         "Compared the Binomial and Poisson distributions by analyzing their behavior across varying parameters using statistical methods like mean comparison and R² from curve fitting. Found that while both distributions can model discrete events, their fit and accuracy vary significantly depending on event probability and sample size.",
@@ -66,7 +78,7 @@ const Portfolio = () => {
         process.env.PUBLIC_URL + "/Images/Poisson.jpg", // Add your image path here
     },
     {
-      id: 7,
+      id: 8,
       title: "Schedule Automation with Microsoft Teams integration",
       description:
         "I developed five streamlined Microsoft Power Automate workflows for the WWU IT department, integrated with Microsoft Teams. These workflows feature a clean, scalable design that enables easy copy paste deployment, deletion, and scheduling making it simple to manage and reuse automation across teams with minimal setup.",
@@ -77,7 +89,7 @@ const Portfolio = () => {
         process.env.PUBLIC_URL + "/Images/PowerAutomate.png", // Add your image path here
     },
     {
-      id: 8,
+      id: 9,
       title: "Java trading Simulation with SQL Integration",
       description:
         "I created a Java program that connects to a MySQL database to pull historical stock data and simulate basic trading activity. It adjusts for stock splits, uses moving averages, and runs buy/sell decisions over time.",
@@ -88,7 +100,7 @@ const Portfolio = () => {
         process.env.PUBLIC_URL + "/Images/stock.jpg", // Add your image path here
     },
     {
-      id: 9,
+      id: 10,
       title: "IOS Word Hunt Solver",
       description:
         "Sick of losing IOS word hunt. Once you input all the letters in your word hunt game it uses DFS to find all possible words while cross referencing an English Dictionary. I still lose but this was fun.",
