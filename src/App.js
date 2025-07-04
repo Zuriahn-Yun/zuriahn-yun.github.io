@@ -13,8 +13,8 @@ const Portfolio = () => {
       id: 1,
       title: "Crypto Dashboard",
       description:
-        "Build a full scale Flask API hosted on Render. The frontend is hosted on Github Pages and takes advantage of the API. It uses CoinGecko API to display traditional Candles and Heiken Ashi Candles for the last 24 hours of any publicly availible crypto coin.",
-      tech: ["Python", "Render","API Development","HTML"],
+        "A Flask API hosted on Render that fetches cryptocurrency data from CoinGecko to provide traditional and Heiken Ashi candlestick data for the last 24 hours. The frontend, hosted on GitHub Pages, displays interactive charts for any public crypto coin.",
+      tech: ["Python", "Render","Flask","HTML"],
       github: "https://github.com/Zuriahn-Yun/Crypto-Engineering",
       live: "https://zuriahn-yun.github.io/Crypto-Dashboard/", 
       image: process.env.PUBLIC_URL + "/Images/Crypto-Dashboard.png", // Add your image path here
