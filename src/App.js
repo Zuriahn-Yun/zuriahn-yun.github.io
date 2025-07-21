@@ -35,7 +35,6 @@ const Portfolio = () => {
       description:
         "Implemented a deep neural network from scratch in Python, including forward/backward propagation, gradient descent, activation functions, and loss computation without using high-level ML frameworks.",
       tech: ["Python", "Numpy"],
-      github: "https://github.com/sizemore-teaching/202520_data471_wassonn_yunz",
       image: process.env.PUBLIC_URL + "/Images/NeuralNetwork.jpg", // Add your image path here
     },
     {
