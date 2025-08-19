@@ -366,7 +366,7 @@ const Portfolio = () => {
           LinkedIn
         </a>
         <a
-          href="mailto:yourname@example.com"
+          href="mailto:yunzuriahn@gmail.com"
           style={styles.socialLink}
           onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
           onMouseLeave={(e) => (e.target.style.color = "#9CA3AF")}
