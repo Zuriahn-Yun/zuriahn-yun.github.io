@@ -336,7 +336,7 @@ const Portfolio = () => {
 
   const AboutPage = () => (
     <div style={styles.aboutContainer}>
-      <h1 style={styles.mainTitle}>Zuriahn Yun</h1>
+      <h1 style={styles.mainTitle}>About Me</h1>
       <p style={styles.mainParagraph}>
         I'm a Data Science undergraduate with minors in Economics and
         Mathematics at Western Washington University. I currently conduct
