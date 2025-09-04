@@ -143,6 +143,10 @@ const Portfolio = () => {
     }
   ];
 
+
+  // ADD A RESEARCH PORTION -> SEPERATE PROJECTS FROM RESEARCH PROJECTS
+
+
   const styles = {
     app: {
       minHeight: "100vh",
