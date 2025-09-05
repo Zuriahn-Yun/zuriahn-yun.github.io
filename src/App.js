@@ -8,6 +8,41 @@ const Portfolio = () => {
   // TEST BUILD WITH - npm start
   // DEPLOY BUILD WITH - npm run deploy
 
+  // RESEARCH PROJECTS DATA
+  const researchprojects = [
+    {
+      id: 1,
+      title: "DeepSqueak - Pipeline",
+      description:
+        "I developed a MATLAB pipeline that bypasses the DeepSqueak GUI to enable high-throughput analysis of mouse audio files. This streamlined tool leverages DeepSqueak’s dependencies while automating batch processing, making it faster and more scalable for neuroscience research applications.",
+      tech: ["Python", "Pandas", "Pillow"],
+      github: "https://github.com/Zuriahn-Yun/DeepSqueak-Pipeline",
+      live: "#",
+      image: process.env.PUBLIC_URL + "/Images/spectrogram.png",
+    },
+    {
+      id: 2,
+      title: "Immunohistochemistry Processing Pipeline",
+      description:
+        "Built a Python pipeline for immunohistochemistry imaging that loads and displays TIFF files with interactive RGB intensity controls for each image. Developed and maintain a custom Python package to support the pipeline, with an analysis module in progress to enable automated quantification of staining patterns.",
+      tech: ["Python", "Pandas", "Pillow"],
+      github: "#",
+      live: "#",
+      image: process.env.PUBLIC_URL + "/Images/immuno.jpg",
+    },
+    {
+      id: 3,
+      title: "Gram Stain Processing Pipeline",
+      description:
+        "Developed scalable Python-based image analysis pipelines using Pillow to study gut proliferation in ASD and WT mouse models, assessing the effects of CBD and terspene therapy. Enabled efficient, team-wide access to high-throughput analysis results.",
+      tech: ["Python", "Pandas", "Pillow"],
+      github: "https://github.com/Zuriahn-Yun/Gram-Stain-Pipeline",
+      live: "#",
+      image: process.env.PUBLIC_URL + "/Images/day11_image1_mouseRJ1-8_ch00_SV.jpg",
+    },
+  ];
+
+
   const projects = [
     {
       id: 1,
@@ -57,17 +92,6 @@ const Portfolio = () => {
     },
     {
       id: 6,
-      title: "Gram Stain Processing Pipeline",
-      description:
-        "Developed scalable Python-based image analysis pipelines using Pillow to study gut proliferation in ASD and WT mouse models, assessing the effects of CBD and terspene therapy. Enabled efficient, team-wide access to high-throughput analysis results.",
-      tech: ["Python", "Pandas", "Pillow"],
-      github: "https://github.com/Zuriahn-Yun/Gram-Stain-Pipeline",
-      live: "#",
-      image:
-        process.env.PUBLIC_URL + "/Images/day11_image1_mouseRJ1-8_ch00_SV.jpg", // Add your image path here
-    },
-    {
-      id: 7,
       title: "Quantifying the Effects of Building Features on Energy Usage",
       description:
         "Created a regression model to predict how much energy a building uses based on things like size, temperature, and number of people. Found that building type and square footage had the biggest impact, and the model gave reliable, accurate results.",
@@ -77,7 +101,7 @@ const Portfolio = () => {
         process.env.PUBLIC_URL + "/Images/linear_regression.png", // Add your image path here
     },
     {
-      id: 8,
+      id: 7,
       title: "Probability of Models in Practice: Poisson Vs Binomial Distribution",
       description:
         "Compared the Binomial and Poisson distributions by analyzing their behavior across varying parameters using statistical methods like mean comparison and R² from curve fitting. Found that while both distributions can model discrete events, their fit and accuracy vary significantly depending on event probability and sample size.",
@@ -87,7 +111,7 @@ const Portfolio = () => {
         process.env.PUBLIC_URL + "/Images/Poisson.jpg", // Add your image path here
     },
     {
-      id: 9,
+      id: 8,
       title: "Schedule Automation with Microsoft Teams integration",
       description:
         "I developed five streamlined Microsoft Power Automate workflows for the WWU IT department, integrated with Microsoft Teams. These workflows feature a clean, scalable design that enables easy copy paste deployment, deletion, and scheduling making it simple to manage and reuse automation across teams with minimal setup.",
@@ -98,7 +122,7 @@ const Portfolio = () => {
         process.env.PUBLIC_URL + "/Images/PowerAutomate.png", // Add your image path here
     },
     {
-      id: 10,
+      id: 9,
       title: "Java trading Simulation with SQL Integration",
       description:
         "I created a Java program that connects to a MySQL database to pull historical stock data and simulate basic trading activity. It adjusts for stock splits, uses moving averages, and runs buy/sell decisions over time.",
@@ -109,7 +133,7 @@ const Portfolio = () => {
         process.env.PUBLIC_URL + "/Images/stock.jpg", // Add your image path here
     },
     {
-      id: 11,
+      id: 10,
       title: "IOS Word Hunt Solver",
       description:
         "Sick of losing IOS word hunt. Once you input all the letters in your word hunt game it uses DFS to find all possible words while cross referencing an English Dictionary. I still lose but this was fun.",
@@ -120,7 +144,7 @@ const Portfolio = () => {
         process.env.PUBLIC_URL + "/Images/JsxLT.jpg", // Add your image path here
     },
     {
-      id: 12,
+      id: 11,
       title: "Phylogetic Tree",
       description:
         "Built a Java application to generate a complete phylogenetic tree from genetic data using agglomerative clustering. Starting with a forest of single-node trees each representing a species, the program calculates pairwise genetic distances and iteratively merges the closest trees until a single, comprehensive phylogenetic tree is formed. ",
@@ -131,7 +155,7 @@ const Portfolio = () => {
         process.env.PUBLIC_URL + "/Images/phylogenetic.png", // Add your image path here
     },
     {
-      id: 13,
+      id: 12,
       title: "Racket Interpreter",
       description:
         "Designed and implemented a full interpreter and parser for the Racket language, written entirely in Racket from scratch. This project involved constructing a complete parsing pipeline, managing lexical scope and evaluation rules.",
@@ -391,21 +415,16 @@ const Portfolio = () => {
       </button>
     </div>
   );
-
-  const ProjectsPage = () => (
-    <div style={styles.projectsContainer}>
-      <div style={styles.projectsHeader}>
-        <h1 style={styles.projectsTitle}>Projects</h1>
-        <p style={styles.projectsSubtitle}></p>
-      </div>
-
+  const ProjectSection = ({ title, projects, isResearch = false }) => (
+    <>
+      <h2 style={styles.sectionTitle}>{title}</h2>
       <div style={styles.projectsGrid}>
         {projects.map((project) => (
           <div
             key={project.id}
-            style={styles.projectCard}
-            onMouseEnter={(e) => (e.target.style.borderColor = "#4B5563")}
-            onMouseLeave={(e) => (e.target.style.borderColor = "#374151")}
+            style={isResearch ? styles.researchCard : styles.projectCard}
+            onMouseEnter={(e) => (e.target.style.borderColor = isResearch ? "#374151" : "#4B5563")}
+            onMouseLeave={(e) => (e.target.style.borderColor = isResearch ? "#1F2937" : "#374151")}
           >
             {project.image && (
               <img
@@ -416,11 +435,16 @@ const Portfolio = () => {
             )}
             <div style={styles.projectContent}>
               <h3 style={styles.projectTitle}>{project.title}</h3>
+              {project.lab && (
+                <div style={styles.labInfo}>
+                  {project.lab}
+                </div>
+              )}
               <p style={styles.projectDescription}>{project.description}</p>
 
               <div style={styles.techTags}>
                 {project.tech.map((tech) => (
-                  <span key={tech} style={styles.techTag}>
+                  <span key={tech} style={isResearch ? styles.researchTechTag : styles.techTag}>
                     {tech}
                   </span>
                 ))}
@@ -433,8 +457,10 @@ const Portfolio = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     style={styles.projectLink}
+                    onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
+                    onMouseLeave={(e) => (e.target.style.color = "#9CA3AF")}
                   >
-                    <Github size={16} /> GitHub
+                    <Github size={16} /> {project.github.includes('.pdf') ? 'View Paper' : 'GitHub'}
                   </a>
                 )}
                 {project.live && project.live !== "#" && (
@@ -443,6 +469,8 @@ const Portfolio = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     style={styles.projectLink}
+                    onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
+                    onMouseLeave={(e) => (e.target.style.color = "#9CA3AF")}
                   >
                     <ExternalLink size={16} /> Live Demo
                   </a>
@@ -452,6 +480,27 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
+    </>
+  );
+
+  const ProjectsPage = () => (
+    <div style={styles.projectsContainer}>
+      <div style={styles.projectsHeader}>
+        <h1 style={styles.projectsTitle}>Projects</h1>
+        <p style={styles.projectsSubtitle}></p>
+      </div>
+
+      <ProjectSection 
+        title="Research" 
+        projects={researchprojects} 
+      />
+
+      <ProjectSection 
+        title="Personal" 
+        projects={projects} 
+      />
+
+      
 
       <div style={{ textAlign: "center" }}>
         <a
@@ -518,7 +567,7 @@ const Portfolio = () => {
 
       {/* Footer */}
       <footer style={styles.footer}>
-        <p>&copy; 2025 Zuriahn Yun.</p>
+        <p></p>
       </footer>
     </div>
   );
