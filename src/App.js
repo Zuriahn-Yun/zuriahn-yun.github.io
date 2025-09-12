@@ -26,7 +26,7 @@ const Portfolio = () => {
       description:
         "Built a Python pipeline for immunohistochemistry imaging that loads and displays TIFF files with interactive RGB intensity controls for each image. Developed and maintain a custom Python package to support the pipeline, with an analysis module in progress to enable automated quantification of staining patterns.",
       tech: ["Python", "Pandas", "Pillow"],
-      github: "#",
+      github: "https://github.com/Zuriahn-Yun/Immunohistochemistry-Pipeline",
       live: "#",
       image: process.env.PUBLIC_URL + "/Images/immuno.jpg",
     },
