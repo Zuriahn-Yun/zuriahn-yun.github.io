@@ -491,7 +491,7 @@ const Portfolio = () => {
       </div>
 
       <ProjectSection 
-        title="Research" 
+        title="Research Data Pipelines" 
         projects={researchprojects} 
       />
 
