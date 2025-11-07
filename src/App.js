@@ -44,16 +44,16 @@ const Portfolio = () => {
 
 
   const projects = [
-    {
-      id: 1,
-      title: "Crypto Dashboard",
-      description:
-        "A Flask API hosted on Render that fetches cryptocurrency data from CoinGecko to provide traditional and Heiken Ashi candlestick data for the last 24 hours. The frontend, hosted on GitHub Pages, displays interactive charts for any public crypto coin.",
-      tech: ["Python", "Render","Flask","HTML"],
-      github: "https://github.com/Zuriahn-Yun/Crypto-Engineering",
-      live: "https://zuriahn-yun.github.io/Crypto-Dashboard/", 
-      image: process.env.PUBLIC_URL + "/Images/Crypto-Dashboard.png", // Add your image path here
-    },
+    // {
+    //   id: 1,
+    //   title: "Kelp",
+    //   description:
+    //     "A Hackathon Project",
+    //   tech: ["Python", "Render","Flask","HTML"],
+    //   github: "https://github.com/Zuriahn-Yun/Crypto-Engineering",
+    //   live: "https://zuriahn-yun.github.io/Crypto-Dashboard/", 
+    //   image: process.env.PUBLIC_URL + "/Images/Crypto-Dashboard.png", // Add your image path here
+    // },
     {
       id: 2,
       title: "Crowd Vision",
