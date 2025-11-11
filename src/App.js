@@ -44,16 +44,16 @@ const Portfolio = () => {
 
 
   const projects = [
-    // {
-    //   id: 1,
-    //   title: "Kelp",
-    //   description:
-    //     "A Hackathon Project",
-    //   tech: ["Python", "Render","Flask","HTML"],
-    //   github: "https://github.com/Zuriahn-Yun/Crypto-Engineering",
-    //   live: "https://zuriahn-yun.github.io/Crypto-Dashboard/", 
-    //   image: process.env.PUBLIC_URL + "/Images/Crypto-Dashboard.png", // Add your image path here
-    // },
+    {
+      id: 1,
+      title: "KELP",
+      description:
+        "KELP is an interactive platform that uses real environmental data to simulate pollution scenarios across Washington State. It features 3D terrain visuals, allowing users to model and visualize how pollution could spread under different conditions, helping promote informed decision-making and environmental awareness.",
+      tech: ["Python"],
+      github: "https://github.com/israelavendanojr/dubhacks-2025",
+      live: "https://www.youtube.com/watch?v=O5l-Clx8iIc", 
+      image: process.env.PUBLIC_URL + "/Images/Kelp.jpg", // Add your image path here
+    },
     {
       id: 2,
       title: "Crowd Vision",
