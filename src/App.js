@@ -72,15 +72,15 @@ const Portfolio = () => {
       tech: ["Python", "Numpy"],
       image: process.env.PUBLIC_URL + "/Images/NeuralNetwork.jpg", // Add your image path here
     },
-    {
-      id: 4,
-      title: "Qubit Simulation",
-      description:
-        "Developed a Python simulator for a single qubit that models quantum states and observables as Hermitian matrices. It also creates random Hermitian Matrices. This project provides a foundation for future extensions to qubit systems.",
-      tech: ["Python", "Numpy"],
-      github: "https://github.com/Zuriahn-Yun/Sample-Based-Quantum-Diagonalization-Simulation/tree/main",
-      image: process.env.PUBLIC_URL + "/Images/SQD.jpg", // Add your image path here
-    },
+    // {
+    //   id: 4,
+    //   title: "Qubit Simulation",
+    //   description:
+    //     "Developed a Python simulator for a single qubit that models quantum states and observables as Hermitian matrices. It also creates random Hermitian Matrices. This project provides a foundation for future extensions to qubit systems.",
+    //   tech: ["Python", "Numpy"],
+    //   github: "https://github.com/Zuriahn-Yun/Sample-Based-Quantum-Diagonalization-Simulation/tree/main",
+    //   image: process.env.PUBLIC_URL + "/Images/SQD.jpg", // Add your image path here
+    // },
     {
       id: 5,
       title: "Pathora",
@@ -132,17 +132,17 @@ const Portfolio = () => {
       image:
         process.env.PUBLIC_URL + "/Images/stock.jpg", // Add your image path here
     },
-    {
-      id: 10,
-      title: "IOS Word Hunt Solver",
-      description:
-        "Sick of losing IOS word hunt. Once you input all the letters in your word hunt game it uses DFS to find all possible words while cross referencing an English Dictionary. I still lose but this was fun.",
-      tech: ["Python"],
-      github: "https://github.com/Zuriahn-Yun/WordHuntSolver/blob/main/solver.py",
-      live: "#",
-      image:
-        process.env.PUBLIC_URL + "/Images/JsxLT.jpg", // Add your image path here
-    },
+    // {
+    //   id: 10,
+    //   title: "IOS Word Hunt Solver",
+    //   description:
+    //     "Sick of losing IOS word hunt. Once you input all the letters in your word hunt game it uses DFS to find all possible words while cross referencing an English Dictionary. I still lose but this was fun.",
+    //   tech: ["Python"],
+    //   github: "https://github.com/Zuriahn-Yun/WordHuntSolver/blob/main/solver.py",
+    //   live: "#",
+    //   image:
+    //     process.env.PUBLIC_URL + "/Images/JsxLT.jpg", // Add your image path here
+    // },
     {
       id: 11,
       title: "Phylogetic Tree",
